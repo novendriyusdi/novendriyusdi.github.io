@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Halaman Tidak Ditemukan (404) - Novendri Yusdi, S.H. & Partners</title>
+  
+  <!-- SEO: Mencegah halaman 404 terindeks, namun tetap mengizinkan bot merayapi link internal -->
+  <meta name="robots" content="noindex, follow" />
+  <meta name="description" content="Halaman yang Anda cari sedang dalam proses pembaruan sistem. Temukan informasi layanan hukum dan artikel terbaru dari Novendri Yusdi, S.H. & Partners." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Custom Modular CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-['Plus_Jakarta_Sans',sans-serif] pb-24">
+
+  <!-- Wrapper Utama Modular -->
+  <div class="max-w-md mx-auto min-h-screen bg-white shadow-sm flex flex-col relative">
+
+    <!-- Header Modular -->
+    <header class="bg-white/95 backdrop-blur sticky top-0 z-50 px-5 py-4 border-b border-slate-100 flex items-center gap-3">
+      <a href="index.html" class="text-slate-800 hover:text-blue-900 transition-colors" aria-label="Kembali ke Beranda">
+        <i class="fas fa-arrow-left text-lg"></i>
+      </a>
+      <span class="font-semibold text-slate-900">Halaman Tidak Ditemukan</span>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="flex-1 p-5">
+      <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 border-t-4 border-t-blue-900 text-center">
+        
+        <!-- Status Badge -->
+        <span class="inline-flex items-center gap-1.5 bg-amber-50 text-amber-800 text-xs font-semibold px-3 py-1 rounded-full mb-4">
+          <i class="fas fa-sync-alt"></i> Penataan Ulang Sistem
+        </span>
+        
+        <div class="text-6xl font-extrabold text-blue-900 leading-none mb-2 tracking-tight">404</div>
+        <h1 class="text-xl font-bold text-slate-900 mb-2">Tautan Tidak Ditemukan</h1>
+        <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+          Tautan lama dari sistem WordPress sebelumnya mungkin telah diperbarui atau dipindahkan. Silakan gunakan menu di bawah untuk melanjutkan.
+        </p>
+
+        <!-- Tombol Aksi Cepat -->
+        <div class="flex flex-col gap-3 mb-6">
+          <a href="index.html" class="bg-blue-900 hover:bg-blue-800 text-white font-semibold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-colors shadow-sm">
+            <i class="fas fa-home"></i> Kembali ke Beranda Utama
+          </a>
+          <a href="https://wa.me/6282174476757?text=Halo%20NY%20%26%20Partners,%20saya%20mencari%20informasi%20hukum%20di%20website%20Anda." target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-colors shadow-sm">
+            <i class="fab fa-whatsapp text-base"></i> Hubungi Darurat via WhatsApp
+          </a>
+        </div>
+
+        <!-- Sitemap Mini untuk SEO & Bot -->
+        <div class="bg-slate-50 rounded-xl p-4 text-left text-xs text-slate-700">
+          <strong class="block text-slate-900 font-semibold mb-2 flex items-center gap-1.5">
+            <i class="fas fa-compass text-blue-900"></i> Halaman Populer:
+          </strong>
+          <ul class="space-y-1.5 pl-5 list-disc text-blue-900">
+            <li><a href="index.html" class="hover:underline">Profil Kantor Hukum & Konsultan</a></li>
+            <li><a href="index.html" class="hover:underline">Layanan Litigasi & Non-Litigasi</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- BOTTOM NAVIGATION BAR (Dirender otomatis oleh components.js) -->
+    <div id="bottom-nav-container"></div>
+
+  </div>
+
+  <!-- Modular JS -->
+  <script src="assets/js/components.js"></script>
+</body>
+</html>

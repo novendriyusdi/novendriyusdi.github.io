@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ - Pertanyaan Umum Layanan Hukum | Novendri Yusdi, S.H. & Partners</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Temukan jawaban atas pertanyaan seputar layanan hukum, biaya pengacara, proses perceraian, pidana, perdata, dan konsultasi di Sidoarjo & Surabaya." />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Custom Modular CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-['Plus_Jakarta_Sans',sans-serif] pb-24">
+
+  <!-- Wrapper Utama Modular (Desain Mobile-First & Responsive) -->
+  <div class="max-w-md mx-auto min-h-screen bg-white shadow-sm flex flex-col relative">
+
+    <!-- Header Modular -->
+    <header class="bg-white/95 backdrop-blur sticky top-0 z-50 px-5 py-4 border-b border-slate-100 flex items-center gap-3">
+      <a href="index.html" class="text-slate-800 hover:text-blue-900 transition-colors" aria-label="Kembali ke Beranda">
+        <i class="fas fa-arrow-left text-lg"></i>
+      </a>
+      <span class="font-semibold text-slate-900">FAQ & Bantuan Hukum</span>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="flex-1 p-5 space-y-4">
+      
+      <!-- Intro Card -->
+      <div class="bg-blue-900 text-white rounded-2xl p-5 shadow-sm">
+        <span class="bg-blue-800 text-blue-100 text-xs font-semibold px-2.5 py-1 rounded-full inline-block mb-2">
+          <i class="fas fa-question-circle"></i> Pusat Bantuan
+        </span>
+        <h1 class="text-lg font-bold mb-1">Pertanyaan yang Sering Diajukan</h1>
+        <p class="text-xs text-blue-100 leading-relaxed">
+          Informasi transparan seputar layanan litigasi, non-litigasi, estimasi biaya, dan prosedur penanganan perkara di kantor kami.
+        </p>
+      </div>
+
+      <!-- Kategori FAQ / Accordion List -->
+      <div class="space-y-3">
+
+        <!-- Item 1 -->
+        <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left font-semibold text-sm text-slate-800 flex justify-between items-center gap-2 focus:outline-none bg-white hover:bg-slate-50 transition-colors">
+            <span>Apa saja layanan hukum yang disediakan?</span>
+            <i class="fas fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-slate-600 leading-relaxed border-t border-slate-50 pt-2">
+            Kami melayani perkara pidana, perdata, perceraian, sengketa bisnis, pembuatan kontrak, PHK/ketenagakerjaan, serta konsultasi hukum untuk individu maupun perusahaan di wilayah Sidoarjo, Surabaya, dan sekitarnya.
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left font-semibold text-sm text-slate-800 flex justify-between items-center gap-2 focus:outline-none bg-white hover:bg-slate-50 transition-colors">
+            <span>Bagaimana cara konsultasi dengan pengacara?</span>
+            <i class="fas fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-slate-600 leading-relaxed border-t border-slate-50 pt-2">
+            Anda dapat langsung menghubungi kami melalui <a href="https://wa.me/6282174476757" target="_blank" class="text-blue-900 font-semibold underline">WhatsApp</a> atau datang langsung ke kantor kami di Perum Taman Suko Asri, Sidoarjo. Kami menyediakan konsultasi online maupun tatap muka sesuai kebutuhan.
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left font-semibold text-sm text-slate-800 flex justify-between items-center gap-2 focus:outline-none bg-white hover:bg-slate-50 transition-colors">
+            <span>Berapa kisaran biaya jasa pengacara?</span>
+            <i class="fas fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-slate-600 leading-relaxed border-t border-slate-50 pt-2">
+            Biaya bervariasi tergantung jenis kasus, tingkat kerumitan, dan ruang lingkup penanganan perkara. Kami selalu memberikan rincian dan estimasi biaya yang transparan setelah mendengarkan kronologi awal dari klien.
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left font-semibold text-sm text-slate-800 flex justify-between items-center gap-2 focus:outline-none bg-white hover:bg-slate-50 transition-colors">
+            <span>Bagaimana proses penanganan perkara perceraian?</span>
+            <i class="fas fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-slate-600 leading-relaxed border-t border-slate-50 pt-2">
+            Proses dimulai dari penyusunan gugatan/permohonan, pendaftaran ke pengadilan, proses mediasi sidang, hingga pembuktian dan putusan. Didampingi pengacara membantu melindungi hak asuh anak dan pembagian harta bersama secara sah.
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden">
+          <button onclick="toggleFaq(this)" class="w-full px-4 py-3.5 text-left font-semibold text-sm text-slate-800 flex justify-between items-center gap-2 focus:outline-none bg-white hover:bg-slate-50 transition-colors">
+            <span>Apakah melayani pendampingan perusahaan (Retainer)?</span>
+            <i class="fas fa-chevron-down text-xs text-slate-400 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-4 pb-4 text-xs text-slate-600 leading-relaxed border-t border-slate-50 pt-2">
+            Ya. Kami menyediakan layanan hukum korporasi berkala (*legal retainer*) mulai dari review kontrak, perizinan, hingga penyelesaian sengketa bisnis luar dan dalam pengadilan.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bantuan Lanjutan Card -->
+      <div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-4 text-center mt-6">
+        <h3 class="text-xs font-bold text-emerald-900 mb-1">Punya Pertanyaan Lain yang Spesifik?</h3>
+        <p class="text-[11px] text-emerald-700 mb-3">Konsultasikan langsung permasalahan hukum Anda dengan tim ahli kami secara cepat.</p>
+        <a href="https://wa.me/6282174476757?text=Halo%20Novendri%20Yusdi%20%26%20Partners,%20saya%20ingin%20berkonsultasi%20mengenai%20masalah%20hukum." target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold py-2.5 px-4 rounded-xl inline-flex items-center gap-2 transition-colors shadow-sm">
+          <i class="fab fa-whatsapp text-sm"></i> Tanya Langsung via WhatsApp
+        </a>
+      </div>
+
+    </main>
+
+    <!-- BOTTOM NAVIGATION BAR (Dirender otomatis oleh components.js) -->
+    <div id="bottom-nav-container"></div>
+
+  </div>
+
+  <!-- Sederhana Script untuk Accordion FAQ -->
+  <script>
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+      
+      // Tutup semua atau toggle yang dipilih
+      content.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
+    }
+  </script>
+
+  <!-- Modular JS (Merender bottom-nav otomatis) -->
+  <script src="assets/js/components.js"></script>
+</body>
+</html>
